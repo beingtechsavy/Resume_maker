@@ -1409,22 +1409,45 @@ class ResumeApp:
         except Exception as e:
             print(f"Error loading Saumik's image: {e}")
             
-        # Saumik's Profile Section
+
         st.markdown(f"""
             <div class="profile-section">
-                <img src="{saumik_image_base64 if saumik_image_base64 else 'https://via.placeholder.com/200'}" 
-                     alt="Saumik Chakraborty" 
-                     class="profile-image"
-                     onerror="this.onerror=null; this.src='https://via.placeholder.com/200';">
-                <h2 class="profile-name">Saumik Chakraborty</h2>
-                <p class="profile-title">AI & Resume Analysis Expert</p>
-                <p class="bio-text">
-                    Saumik Chakraborty is a talented professional with expertise in AI-powered resume analysis and optimization.
-                    His contributions to the SnapResume platform have been instrumental in enhancing the resume analysis capabilities
-                    and providing users with valuable insights for their career advancement.
-                </p>
+            <img src="{'https://avatars.githubusercontent.com/u/111677648?v=4'}" 
+             alt="Arpan Padhi" 
+             class="profile-image"
+             onerror="this.onerror=null; this.src='https://avatars.githubusercontent.com/u/111677648?v=4';">
+            <h2 class="profile-name">Arpan Padhi</h2>
+            <p class="profile-title">Android and ML Developer</p>
+            <div class="social-links">
+            <a href="https://github.com/beingtechsavy" class="social-link" target="_blank">
+            <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arpanpadhi/" class="social-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:arpanpadhi2004@gmail.com" class="social-link" target="_blank">
+            <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.youtube.com/@ArpanPadhi" class="social-link" target="_blank">
+            <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://x.com/Beingtechsavy" class="social-link" target="_blank">
+            <i class="fab fa-twitter"></i>
+            </a>
+            </div>
+            <p class="bio-text">
+            Aloha,
+            I am Arpan,
+            A specimen of the ordinary sapiens aspiring to evolve spontaneously.
+            Exploring the world of tech and business like the cavemen did with fire.
+            </p>
             </div>
         """, unsafe_allow_html=True)
+        
+
+
+
+
         
         # Vision Section
         st.markdown("""
